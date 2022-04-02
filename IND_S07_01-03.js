@@ -22,6 +22,7 @@ function busquedaObjeto(array, item) {
     for (let key in array) {
         if ((array[key]["titulo"] == item) || (array[key]["autor"] == item)) {
             encontrado = true;
+            break;
         }
     }
     encontrado ? console.log("Se encontró el elemento") : console.log("No se encontró el elemento");
